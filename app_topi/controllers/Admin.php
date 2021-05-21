@@ -157,10 +157,10 @@ class Admin extends MY_Controller {
                 $params = unserialize($field->params);
                 $dataShown = "";
                 if(isset($params['nik'])){
-                    $dataShown += "NIK ".$params['nik'];
+                    $dataShown .= "NIK ".$params['nik'];
                 }
                 if(isset($params['kk'])){
-                    $dataShown += "KK ".$params['kk'];
+                    $dataShown .= "KK ".$params['kk'];
                 }
                 $no++;
                 $row = array();
