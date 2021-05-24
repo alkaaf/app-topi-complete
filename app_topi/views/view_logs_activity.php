@@ -57,7 +57,7 @@
                                                 <th>Nama</th>
                                                 <th>Username</th>
                                                 <th>Uri</th>
-                                                <th>Params</th>
+                                                <th>Parameter (NIK/KK)</th>
                                                 <th>API Key</th>
                                                 <th>IP Address</th>
                                                 <th>Terakhir Akses</th>
@@ -71,7 +71,7 @@
                                             <th>Nama</th>
                                             <th>Username</th>
                                             <th>Uri</th>
-                                            <th>Params</th>
+                                            <th>Parameter (NIK/KK)</th>
                                             <th>API Key</th>
                                             <th>IP Address</th>
                                             <th>Terakhir Akses</th>
@@ -104,12 +104,7 @@ $(document).ready(function() {
     maxDate = new DateTime(endDate, {
         format: 'YYYY-MM-DD'
     });
-    //datatables
-    // let postData = {
-    //     start_date: startDate.val(),
-    //     end_date: endDate.val(),
-    //     user: user.val()
-    // }
+
     let dataTable = table.DataTable({
         "processing": true,
         "serverSide": true,
